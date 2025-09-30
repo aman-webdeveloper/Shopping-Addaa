@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
-      // ❌ versions hata diye, ye galat the
       vaul: 'vaul',
       sonner: 'sonner',
       recharts: 'recharts',
@@ -54,11 +53,11 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'dist', // ✅ FIXED: Vercel expects "dist"
+    outDir: 'dist',
   },
   server: {
     port: 3000,
     open: true,
   },
-   base: './',
+  base: '/', // ✅ important for Vercel
 });
