@@ -69,20 +69,20 @@ export function SubcategoryPage() {
                   <div className="h-56 overflow-hidden bg-gray-100">
                     <img 
                       src={product.image} 
-                      alt={product.name}
+                      alt={product.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
 
                   {/* Product Details */}
                   <div className="p-4">
-                    <h3 className="text-lg mb-2 line-clamp-1">{product.name}</h3>
+                    <h3 className="text-lg mb-2 line-clamp-1">{product.title}</h3>
                     <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description}</p>
                     <div className="mb-4">
                       <span className="text-2xl text-blue-600">{product.price}</span>
                     </div>
                     <button 
-                      onClick={() => handleWhatsAppClick(product.name, product.price)}
+                      onClick={() => handleWhatsAppClick(product.title, product.price)}
                       className="w-full bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
                     >
                       <MessageCircle className="w-4 h-4" />
