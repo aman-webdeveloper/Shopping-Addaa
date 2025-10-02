@@ -4,12 +4,12 @@ import { Product } from "../../../types";
 export const menEthnicFootwear: Product[] = [
   {
     id: 1,
-    title: "Traditional Mojari",
+    title: "boot fomraml ",
     description: "Handcrafted ethnic footwear",
     price: "₹1830",
     category: "men",
     subcategory: "men-ethnic-footwear",
-    image: "https://via.placeholder.com/300x300?text=Traditional+Mojari",
+    image:"Screenshot 2025-09-30 161609.png",
     categorySlug: "men-ethnic-footwear"
   },
   {
